@@ -15,8 +15,8 @@ namespace MM4Bank.Application.Interfaces
         Task<ClientDTO> GetByCPFAsync(CPF cpf);
         Task<ClientDTO> GetByNameAsync(Name name);
         Task<ClientDTO> GetClientAccountAsync(Guid? id);
-        Task AddAsync(ClientDTO clientDTO);
-        Task UpdateAsync(ClientDTO clientDTO);
-        Task RemoveAsync(Guid? id);
+        Task<ClientDTO> AddAsync(ClientDTO clientDTO);
+        Task<ClientDTO> UpdateAsync(ClientDTO clientDTO);
+        Task<ClientDTO> RemoveAsync(Guid? id);
     }
 }
